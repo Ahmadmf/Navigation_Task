@@ -9,31 +9,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="./js/main.js"></script>
 
-
-  <script>
-
-    $(function() {
-
-
-   var people = [];
-
-   $.getJSON('people.json', function(data) {
-       $.each(data.person, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
-           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
-           $(tblRow).appendTo("#userdata tbody");
-     });
-
-   });
-
-});
-</script>
-
-
-
-
-
-
 </head>
 <body>
 
